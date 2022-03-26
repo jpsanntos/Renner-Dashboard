@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renner ERP</title>
+
+    <!--Material CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">  
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png">
+                </div>
+            <div class="close" id="close-btn">
+                <span   class="material-icons-sharp"> close </span>
+            </div>
+            </div>
+                <div class="sidebar">
+                    <a href="#" class="active">
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3>DashBoard</h3>
+                    </a>
+                    <a href="#" >
+                        <span class="material-icons-sharp">support_agent</span>
+                        <h3>Chamados</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">devices</span>
+                        <h3>Equipamentos</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">textsms</span>
+                        <h3>Mensagens</h3>
+                        <span class="message-count">4</span>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3>Configurações</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">person_outline</span>
+                        <h3>Log Out</h3>
+                    </a> 
+                    
+                </div>
+        </aside>
+        <!----------END OF ASIDE---------->
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <!---------------- Chamados --------------->
+                <div class="chamados">
+                    <span class="material-icons-sharp">support_agent</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total de Chamados Resolvidos</h3>
+                            <h1>10</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 Horas</small>
+                </div>
+                <!---------------End Chamados--------------->
+
+                <!---------------Equipamentos--------------->
+                <div class="equipamentos">
+                    <span class="material-icons-sharp">devices</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total de Equipamentos Funcionando</h3>
+                            <h1>30</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>100%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 Horas</small>
+                </div>
+                <!---------------End Equipamentos--------------->
+                <div class="ordens">
+                    <span class="material-icons-sharp">
+                        mouse
+                        </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Solicitação de Equipamentos</h3>
+                            <h1>5</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>55%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 Horas</small>
+                </div>
+                 <!---------------End Ordens--------------->
+            </div>
+
+                <!---------------Main--------------->
+
+            <div class="recent-orders">
+                <h2>Chamados Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Responsável</th>
+                            <th>Data</th>
+                            <th>Descrição</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>João Pedro dos Santos</td>
+                            <td>21/03/2022</td>
+                            <td>Mouse não Funciona</td>
+                            <td class="warning" >Aberto</td>
+                            <th><a href="">Detalhes</a></th>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Lucas Eduardo</td>
+                            <td>24/03/2022</td>
+                            <td>Notebook não Carrega</td>
+                            <td class="success">Resolvido</td>
+                            <th><a href="">Detalhes</a></th>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>Thais Lopes</td>
+                            <td>24/01/2022</td>
+                            <td>Teclado Falhando</td>
+                            <td class="danger">Não Resolvido</td>
+                            <th><a href="">Detalhes</a></th>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Mostrar Todos</a>
+            </div>
+            <!---------------End Main--------------->
+        </main>
+        <div class="right">
+            <div class="top">
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>João Pedro</b></p>
+                        <small class="text-muted">Front-End Engineer</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- END OF TOP-->
+            <div class="recent-updates">
+                <div class="updates">
+                    <div class="update">
+                        <h2>Notificações</h2> 
+                        <div id="current_date" class="current_date"> 
+                           <script>
+                                date = new Date();
+                                year = date.getFullYear();
+                                month = date.getMonth() + 1;
+                                day = date.getDate();
+                                document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+                           </script>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt=""> 
+                        </div><h3>Gustavo<b> - Técnico de Manutenção</b></h3>
+                        <div class="message">
+                            <p><b>Olá</b> João Pedro! A maquina <b>n° 22</b> ja esta disponivel para uso!</p>
+                            <small class="text-muted">2 Minutos atrás</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg" alt="">
+                        </div><h3>Ana<b> - Suporte Técnico</b></h3>
+                        <div class="message">
+                            <p><b>Olá</b> João Pedro! O seu chamado presencial foi agendado para dia <b>28/03/2022</b>!</p>
+                            <small class="text-muted">2 Semanas atrás</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-4.jpg" alt="">
+                        </div>
+                        <h3>Izabela<b> - Assistente Virtual</b></h3> 
+                        <div class="message">
+                            <p><b>Olá</b> João Pedro! Seja Bem-Vindo ao nosso ERP!</p>
+                            <small class="text-muted">20 Dias atrás</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
